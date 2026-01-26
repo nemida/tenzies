@@ -1,16 +1,53 @@
-# React + Vite
+# 🎲 Tenzies Game
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A fun, interactive dice game built using **React**. The objective is to roll the dice until they all show the same value.
 
-Currently, two official plugins are available:
+![Project Screenshot](src/assets/ss.png)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🕹️ How to Play
 
-## React Compiler
+1.  **Start:** The game begins with 10 random dice.
+2.  **Hold:** Click on a die to "freeze" it at its current value between rolls.
+3.  **Roll:** Click the "Roll" button to re-roll the un-held dice.
+4.  **Win:** You win when all 10 dice are held and show the same number.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## ✨ Key Features
 
-## Expanding the ESLint configuration
+* **State Management:** Tracks the state of ten separate die components (value and held status).
+* **Game Loop Logic:** Checks for winning conditions (all held + all matching values) on every update.
+* **User Interaction:** Interactive UI allowing users to select/deselect dice.
+* **Visual Feedback:** distinct visual styles for held vs. unheld dice.
+* **Celebration:** Includes a confetti effect upon winning.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠️ Tech Stack
+
+* **React:** Functional components, Props, and Hooks (`useState`, `useEffect`).
+* **CSS:** Custom styling for grid layout and die faces.
+* **Nanoid:** Used for generating unique keys for the dice array.
+* **React-Confetti:** For the winning animation.
+
+## 🚀 Installation & Setup
+
+To run this project locally:
+
+1.  **Clone the repository:**
+    ```bash
+    git clone [https://github.com/your-username/tenzies-game.git](https://github.com/your-username/tenzies-game.git)
+    ```
+2.  **Navigate into the directory:**
+    ```bash
+    cd tenzies-game
+    ```
+3.  **Install dependencies:**
+    ```bash
+    npm install
+    ```
+4.  **Start the development server:**
+    ```bash
+    npm run dev
+    ```
+    *(Note: Use `npm start` if you created the app with Create React App)*
+
+
+
+
